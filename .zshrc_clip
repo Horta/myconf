@@ -2,7 +2,7 @@
 
   function cutbuffer() {
     zle .$WIDGET
-    echo $CUTBUFFER | pbcopy
+    which pbcopy &>/dev/null && echo $CUTBUFFER | pbcopy
     echo $CUTBUFFER | xclip
   }
 
@@ -24,7 +24,7 @@
   done
 
   function putbuffer() {
-    pbpaste | xclip
+    which pbpaste &>/dev/null && pbpaste | xclip
     zle copy-region-as-kill "$(xclip -o)"
     zle .$WIDGET
   }
