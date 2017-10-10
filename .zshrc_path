@@ -1,0 +1,5 @@
+export PATH="/usr/local/bin:$PATH"
+export PATH="/Users/horta/bin:$PATH"
+export PATH="/Users/horta/anaconda/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/ccache/libexec:$PATH"

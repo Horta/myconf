@@ -24,6 +24,6 @@ source ~/.zshrc_vars
 source ~/.zshrc_path
 source ~/.zshrc_alias
 source ~/.zshrc_functions
-source ~/.zshrc_sysclip
+source ~/.zshrc_clip
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
