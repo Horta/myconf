@@ -3,8 +3,7 @@ source ~/.zplug/init.zsh
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug "mafredri/zsh-async", from:github
 zplug "sindresorhus/pure", use:"pure.zsh", from:github, as:theme
-zplug "zsh-users/zsh-syntax-highlighting", defer:2
-zplug "b4b4r07/zsh-vimode-visual", defer:3
+zplug "zsh-users/zsh-syntax-highlighting", defer:1
 zplug "plugins/vi-mode", from:oh-my-zsh
 zplug "lib/clipboard", from:oh-my-zsh
 zplug "peterhurford/git-aliases.zsh"
