@@ -2,7 +2,7 @@ export KEYTIMEOUT=1
 export EDITOR='vim'
 export HOMEBREW_GITHUB_API_TOKEN=cd468c83cf96297451379164245582567c1a87bd
 
-export HISTFILE=/Users/horta/.zhistory
+export HISTFILE=$HOME/.zhistory
 export SAVEHIST=50000
 export HISTSIZE=$SAVEHIST
 setopt inc_append_history

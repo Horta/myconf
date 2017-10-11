@@ -9,6 +9,8 @@ Plug 'bling/vim-airline'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Chiel92/vim-autoformat'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-eunuch'
+Plug 'thaerkh/vim-workspace'
 
 call plug#end()
 
@@ -32,3 +34,8 @@ filetype plugin on
 syntax on
 color dracula
 set timeoutlen=1000 ttimeoutlen=0
+
+nnoremap <C-s> :ToggleWorkspace<CR>
+let g:workspace_session_name = '.session.vim'
+let g:workspace_autosave = 1
+let g:workspace_autosave_ignore = ['gitcommit', 'qf', 'nerdtree', 'tagbar']
