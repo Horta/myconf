@@ -2,13 +2,12 @@ source ~/.zplug/init.zsh
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug "mafredri/zsh-async", from:github
-zplug "sindresorhus/pure", use:"pure.zsh", from:github, as:theme
 zplug "zsh-users/zsh-syntax-highlighting"
-zplug "plugins/vi-mode", from:oh-my-zsh
 zplug "lib/clipboard", from:oh-my-zsh
 zplug "peterhurford/git-aliases.zsh"
 zplug "zsh-users/zsh-autosuggestions"
-
+zplug "themes/agnoster", from:oh-my-zsh
+zplug "b4b4r07/enhancd", use:init.sh
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
