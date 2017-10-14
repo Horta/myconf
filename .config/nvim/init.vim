@@ -26,7 +26,8 @@ nnoremap “ :bprev<CR>
 nnoremap ‘ :bnext<CR>
 
 nnoremap <C-\> :NERDTreeToggle<CR>
-autocmd BufWritePre *.py :Autoformat
+"autocmd BufWritePre *.py :Autoformat
+au BufWrite * :Autoformat
 
 :command Q bp|bd #
 
@@ -39,3 +40,4 @@ nnoremap <C-s> :ToggleWorkspace<CR>
 let g:workspace_session_name = '.session.vim'
 let g:workspace_autosave = 1
 let g:workspace_autosave_ignore = ['gitcommit', 'qf', 'nerdtree', 'tagbar']
+let g:deoplete#enable_at_startup = 1
