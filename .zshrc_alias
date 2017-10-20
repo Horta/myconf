@@ -9,3 +9,7 @@ alias ebi-local="ssh ebi-cli-local"
 alias ebi-remote="ssh ebi-cli-remote"
 alias itmux='tmux -CC new-session -A -s horta-session'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+alias ga='git add'
+alias gaa='git add --all'
+alias gc='git commit'
+alias gp='git push'
