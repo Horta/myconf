@@ -1,5 +1,10 @@
-export PATH="/usr/local/bin:$PATH"
-export PATH="/Users/horta/bin:$PATH"
-export PATH="/Users/horta/anaconda/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="/usr/local/opt/ccache/libexec:$PATH"
+
+if [[ "$(hostname)" == *"ebi"* ]]; then
+    export PATH="$SYSTEM/linuxbrew/lib/perl5/site_perl/bin:$SYSTEM/anaconda5/bin:$SYSTEM/bin:$SYSTEM/linuxbrew/sbin:$SYSTEM/linuxbrew/bin:$PATH"
+else
+    export PATH="/usr/local/bin:$PATH"
+    export PATH="/Users/horta/bin:$PATH"
+    export PATH="/Users/horta/anaconda/bin:$PATH"
+    export PATH="$HOME/.cargo/bin:$PATH"
+    export PATH="/usr/local/opt/ccache/libexec:$PATH"
+fi
