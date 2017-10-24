@@ -1,6 +1,8 @@
 
 if [[ "$(hostname)" == *"ebi"* ]]; then
     export PATH="$SYSTEM/linuxbrew/lib/perl5/site_perl/bin:$SYSTEM/anaconda5/bin:$SYSTEM/bin:$SYSTEM/linuxbrew/sbin:$SYSTEM/linuxbrew/bin:$PATH"
+elif [[ "$(hostname)" == *"yoda"* ]]; then
+    export PATH="$SYSTEM/linuxbrew/lib/perl5/site_perl/bin:$SYSTEM/anaconda5/bin:$SYSTEM/bin:$SYSTEM/linuxbrew/sbin:$SYSTEM/linuxbrew/bin:$PATH"
 elif [[ "$(hostname)" == *"walter"* ]]; then
     export PATH="/home/horta/anaconda/bin:$PATH"
 else
