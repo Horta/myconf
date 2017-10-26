@@ -8,6 +8,7 @@ zplug "peterhurford/git-aliases.zsh"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "themes/agnoster", from:oh-my-zsh
 zplug "b4b4r07/enhancd", use:init.sh
+zplug "horta/transfer"
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
