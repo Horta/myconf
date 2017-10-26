@@ -28,7 +28,7 @@ source ~/.zshrc_alias
 source ~/.zshrc_functions
 source ~/.zshrc_clip
 
-if [[ "$(hostname)" == *"ebi"* ]]; then
+if [[ "$(hostname)" == *"ebi-cli"* ]]; then
     source activate default
 fi
 
