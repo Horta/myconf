@@ -1,5 +1,5 @@
 
-if [[ "$(hostname)" == *"ebi"* ]]; then
+if [[ "$(hostname)" == *"ebi-cli"* ]]; then
     export PATH="$SYSTEM/linuxbrew/lib/perl5/site_perl/bin:$SYSTEM/anaconda5/bin:$SYSTEM/bin:$SYSTEM/linuxbrew/sbin:$SYSTEM/linuxbrew/bin:$PATH"
 elif [[ "$(hostname)" == *"yoda"* ]]; then
     export PATH="$SYSTEM/linuxbrew/lib/perl5/site_perl/bin:$SYSTEM/anaconda5/bin:$SYSTEM/bin:$SYSTEM/linuxbrew/sbin:$SYSTEM/linuxbrew/bin:$PATH"
