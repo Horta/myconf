@@ -19,10 +19,17 @@ fi
 
 zplug load
 
+# Emacs mode
+bindkey -e
+
 source ~/.zshrc_vars
 source ~/.zshrc_path
 source ~/.zshrc_alias
 source ~/.zshrc_functions
 source ~/.zshrc_clip
+
+if [[ "$(hostname)" == *"ebi"* ]]; then
+    source activate default
+fi
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
