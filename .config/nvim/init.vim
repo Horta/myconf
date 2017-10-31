@@ -9,7 +9,6 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Chiel92/vim-autoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-eunuch'
-Plug 'thaerkh/vim-workspace'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
@@ -34,10 +33,6 @@ filetype plugin on
 
 set timeoutlen=1000 ttimeoutlen=0
 
-nnoremap <C-s> :ToggleWorkspace<CR>
-let g:workspace_session_name = '.session.vim'
-let g:workspace_autosave = 1
-let g:workspace_autosave_ignore = ['gitcommit', 'qf', 'nerdtree', 'tagbar']
 let g:deoplete#enable_at_startup = 1
 
 noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
@@ -63,3 +58,6 @@ endif
 colorscheme onehalfdark
 let g:airline_theme='onehalfdark'
 
+let &colorcolumn=join(range(80,999),",")
+highlight ColorColumn ctermbg=235 guibg=#191919
+highlight NonText ctermbg=235 guibg=#191919
