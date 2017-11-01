@@ -25,6 +25,8 @@ nnoremap “ :bprev<CR>
 nnoremap ‘ :bnext<CR>
 
 nnoremap <C-\> :NERDTreeToggle<CR>
+
+au FileType *.py let b:autoformat_autoindent=0
 au BufWrite *.py :Autoformat
 
 :command Q bp|bd #
