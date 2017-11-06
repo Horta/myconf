@@ -1,6 +1,9 @@
 
 if [[ "$(hostname)" == *"ebi-cli"* ]]; then
-    export PATH="$SYSTEM/linuxbrew/lib/perl5/site_perl/bin:$SYSTEM/anaconda5/bin:$SYSTEM/bin:$SYSTEM/linuxbrew/sbin:$SYSTEM/linuxbrew/bin:$PATH"
+    export PATH="$SYSTEM/linuxbrew/sbin:$SYSTEM/linuxbrew/bin:$PATH"
+    export PATH="$SYSTEM/anaconda5/bin:$PATH"
+    export PATH="$SYSTEM/linuxbrew/lib/perl5/site_perl/bin:$PATH"
+    export PATH="$HOME/.gem/ruby/2.4.0/bin:$PATH"
 elif [[ "$(hostname)" == *"yoda"* ]]; then
     export PATH="$SYSTEM/linuxbrew/lib/perl5/site_perl/bin:$SYSTEM/anaconda5/bin:$SYSTEM/bin:$SYSTEM/linuxbrew/sbin:$SYSTEM/linuxbrew/bin:$PATH"
     source activate default

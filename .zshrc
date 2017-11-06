@@ -9,6 +9,7 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "themes/agnoster", from:oh-my-zsh
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "horta/transfer"
+zplug "zsh-users/zsh-history-substring-search"
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -22,6 +23,9 @@ zplug load
 # Emacs mode
 bindkey -e
 
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 source ~/.zshrc_vars
 source ~/.zshrc_path
 source ~/.zshrc_alias
@@ -31,5 +35,3 @@ source ~/.zshrc_clip
 if [[ "$(hostname)" == *"ebi-cli"* ]]; then
     source activate default
 fi
-
-#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
