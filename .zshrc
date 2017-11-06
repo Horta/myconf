@@ -31,5 +31,3 @@ source ~/.zshrc_clip
 if [[ "$(hostname)" == *"ebi-cli"* ]]; then
     source activate default
 fi
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
