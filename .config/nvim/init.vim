@@ -12,6 +12,8 @@ Plug 'tpope/vim-eunuch'
 Plug 'yuttie/comfortable-motion.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'wincent/command-t', {'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'}
+Plug 'fidian/hexmode'
+Plug 'brooth/far.vim'
 
 call plug#end()
 
@@ -43,8 +45,6 @@ map g# <Plug>(incsearch-nohl-g#)
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-nnoremap <C-\> :NERDTreeToggle<CR>
-
 au FileType *.py let b:autoformat_autoindent=0
 au BufWrite *.py,*.vim :Autoformat
 
@@ -71,3 +71,19 @@ let g:airline_theme='onehalfdark'
 let &colorcolumn=join(range(80,999),",")
 highlight ColorColumn ctermbg=235 guibg=#191919
 highlight NonText ctermbg=235 guibg=#191919
+
+
+" Called once right before you start selecting multiple cursors
+function! Multiple_cursors_before()
+    if exists('g:deoplete#disable_auto_complete')
+        let g:deoplete#disable_auto_complete = 1
+    endif
+endfunction
+
+" Called once only when the multiple selection is canceled (default <Esc>)
+function! Multiple_cursors_after()
+    if exists('g:deoplete#disable_auto_complete')
+        let g:deoplete#disable_auto_complete = 0
+    endif
+endfunction
+

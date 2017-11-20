@@ -10,6 +10,7 @@ zplug "themes/agnoster", from:oh-my-zsh
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "horta/transfer"
 zplug "zsh-users/zsh-history-substring-search"
+zplug "paulirish/git-open", as:plugin
 
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "

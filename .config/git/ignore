@@ -1,3 +1,4 @@
+.ropeproject/
 .mypy_cache/
 .vscode/
 
@@ -50,7 +51,6 @@ Icon?
 __pycache__/
 
 .atom-beautify*
-.clang-format
 
 *.vim
 .undodir/
