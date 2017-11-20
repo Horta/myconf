@@ -12,3 +12,4 @@ export SAVEHIST=500000
 export HISTSIZE=$SAVEHIST
 setopt inc_append_history
 setopt share_history
+unset SSH_ASKPASS
