@@ -3,3 +3,7 @@ function lazygit() {
     git commit -a -m "$*"
     git push
 }
+
+function totp() {
+    oathtool --totp -b $(<~/".totp_${1:-google}") | tr -d '[:space:]'
+}

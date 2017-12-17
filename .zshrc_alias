@@ -3,17 +3,12 @@ alias pt="python setup.py test"
 alias pd="python setup.py develop"
 alias pi="python setup.py install"
 alias walter="ssh walter.danilohorta.online"
-alias yoda-local="ssh yoda-login-local"
-alias yoda-remote="ssh yoda-login-remote"
-alias ebi-local="ssh ebi-cli-local"
-alias ebi-remote="ssh ebi-cli-remote"
 alias itmux='tmux -CC new-session -A -s horta-session'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
 alias gp='git push'
-alias lc='colorls -lA --sd'
 
 if loc="$(type -p "exa")" || [ -z "$loc" ]; then
     alias ls='exa'
