@@ -4,8 +4,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
 Plug 'haya14busa/incsearch.vim'
 Plug 'bling/vim-airline'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
 Plug 'Chiel92/vim-autoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-eunuch'
@@ -17,6 +15,8 @@ Plug 'brooth/far.vim'
 
 call plug#end()
 
+set number
+set relativenumber
 set tabstop=4
 set shiftwidth=4
 set expandtab
