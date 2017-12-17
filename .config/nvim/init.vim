@@ -75,18 +75,10 @@ let &colorcolumn=join(range(80,999),",")
 highlight ColorColumn ctermbg=235 guibg=#191919
 highlight NonText ctermbg=235 guibg=#191919
 
+" Open NERDTree if vim is invoked without argument.
+autocmd StdinReadPre * let s:std_in=1
+if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in")
+    autocmd VimEnter * | exe 'NERDTree' argv()[0] | wincmd p | ene
+endif
 
-" Called once right before you start selecting multiple cursors
-function! Multiple_cursors_before()
-    if exists('g:deoplete#disable_auto_complete')
-        let g:deoplete#disable_auto_complete = 1
-    endif
-endfunction
-
-" Called once only when the multiple selection is canceled (default <Esc>)
-function! Multiple_cursors_after()
-    if exists('g:deoplete#disable_auto_complete')
-        let g:deoplete#disable_auto_complete = 0
-    endif
-endfunction
-
+map <C-\> :NERDTreeToggle<CR>
