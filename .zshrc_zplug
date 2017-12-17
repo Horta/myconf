@@ -7,7 +7,7 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "peterhurford/git-aliases.zsh"
 zplug "zsh-users/zsh-autosuggestions"
-zplug "themes/agnoster", from:oh-my-zsh
+zplug "subnixr/minimal"
 zplug "horta/transfer"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "paulirish/git-open", as:plugin
