@@ -12,6 +12,9 @@ Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'wincent/command-t', {'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'}
 Plug 'fidian/hexmode'
 Plug 'brooth/far.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'vim-scripts/ReplaceWithRegister'
 
 call plug#end()
 
