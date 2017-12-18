@@ -1,15 +1,3 @@
-#source $HOME/.zshrc_zplug
-#
-## Emacs mode
-#bindkey -e
-#
-#bindkey '^[[A' history-substring-search-up
-#bindkey '^[[B' history-substring-search-down
-#
-#
-#
-#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 source '/Users/horta/.zplugin/bin/zplugin.zsh'
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
@@ -23,3 +11,7 @@ if [[ -f ~/.zshrc_local ]] ; then
 fi
 
 source ~/.zshrc_zplugin
+
+if [[ -e ~/.iterm2_shell_integration.zsh ]] ; then
+    source ~/.iterm2_shell_integration.zsh
+fi
