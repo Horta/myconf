@@ -8,7 +8,8 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-eunuch'
 Plug 'yuttie/comfortable-motion.vim'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
+" Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'dracula/vim'
 Plug 'wincent/command-t', {'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'}
 Plug 'fidian/hexmode'
 Plug 'brooth/far.vim'
@@ -68,8 +69,9 @@ if (empty($TMUX))
     endif
 endif
 
-colorscheme onehalfdark
-let g:airline_theme='onehalfdark'
+" colorscheme onehalfdark
+color dracula
+let g:airline_theme='dracula'
 
 let &colorcolumn=join(range(80,999),",")
 highlight ColorColumn ctermbg=235 guibg=#191919
