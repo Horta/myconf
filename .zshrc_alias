@@ -9,6 +9,7 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
 alias gp='git push'
+alias copy='lemonade copy'
 
 if loc="$(type -p "exa")" || [ -z "$loc" ]; then
     alias ls='exa'
