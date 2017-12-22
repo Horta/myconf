@@ -7,3 +7,11 @@ function lazygit() {
 function totp() {
     oathtool --totp -b $(<~/".totp_${1:-google}") | tr -d '[:space:]'
 }
+
+function lsh() {
+    ps cax | grep lemonade > /dev/null
+    if [[ $? -ne 0 ]] ; then
+        (nohup lemonade server -allow 127.0.0.1 > /dev/null 2>&1 &)
+    fi
+    ssh -R 2489:127.0.0.1:2489 "$@"
+}
