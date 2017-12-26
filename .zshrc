@@ -15,7 +15,3 @@ if [[ -f ~/.zshrc_local ]] ; then
 fi
 
 source ~/.zshrc_zplugin
-
-if [[ -e ~/.iterm2_shell_integration.zsh ]] ; then
-    source ~/.iterm2_shell_integration.zsh
-fi
