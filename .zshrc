@@ -2,8 +2,7 @@ source ~/.zplugin/bin/zplugin.zsh
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 
-# Vi Mode
-bindkey -v
+bindkey -e
 export KEYTIMEOUT=1
 
 source ~/.zshrc_vars

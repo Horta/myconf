@@ -7,10 +7,8 @@ Plug 'bling/vim-airline'
 Plug 'Chiel92/vim-autoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-eunuch'
-Plug 'yuttie/comfortable-motion.vim'
-" Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'dracula/vim'
-Plug 'wincent/command-t', {'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'}
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'fidian/hexmode'
 Plug 'brooth/far.vim'
 Plug 'tpope/vim-surround'
@@ -26,10 +24,8 @@ set shiftwidth=4
 set expandtab
 let g:airline#extensions#tabline#enabled = 1
 set clipboard=unnamedplus
-set mouse=nicr
+"set mouse=nicr
 set completeopt-=preview
-noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
-noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 
 nnoremap “ :bprev<CR>
 nnoremap ‘ :bnext<CR>
@@ -83,4 +79,4 @@ if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in")
     autocmd VimEnter * | exe 'NERDTree' argv()[0] | wincmd p | ene
 endif
 
-map <C-\> :NERDTreeToggle<CR>
+:command NE NERDTree
