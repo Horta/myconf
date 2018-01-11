@@ -121,7 +121,7 @@ module.exports = {
         maximize: 'meta+enter'
       },
       showIndicators: false, // Show pane number
-      indicatorPrefix: '^⌥', // Will be completed with pane number
+      indicatorPrefix: '', // Will be completed with pane number
       indicatorStyle: { // Added to indicator <div>
         position: 'absolute',
         top: 0,
