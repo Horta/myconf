@@ -37,6 +37,8 @@ alias gc='git commit'
 alias gp='git push'
 alias copy='lemonade copy'
 alias ll='exa'
+alias e='exit'
+alias t='tmux'
 
 function lazygit() {
     git add .
