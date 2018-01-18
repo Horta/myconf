@@ -14,6 +14,7 @@ Plug 'brooth/far.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'blueyed/vim-diminactive'
 
 call plug#end()
 
@@ -24,7 +25,6 @@ set shiftwidth=4
 set expandtab
 let g:airline#extensions#tabline#enabled = 1
 set clipboard=unnamedplus
-"set mouse=nicr
 set completeopt-=preview
 
 nnoremap “ :bprev<CR>
@@ -32,7 +32,6 @@ nnoremap ‘ :bnext<CR>
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
-" :h g:incsearch#auto_nohlsearch
 set hlsearch
 let g:incsearch#auto_nohlsearch = 1
 map n  <Plug>(incsearch-nohl-n)
@@ -80,3 +79,4 @@ if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in")
 endif
 
 :command NE NERDTree
+set mouse=
