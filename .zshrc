@@ -28,16 +28,24 @@ alias ip="ipython"
 alias pt="python setup.py test"
 alias pd="python setup.py develop"
 alias pi="python setup.py install"
+alias sdist="python setup.py sdist"
 alias walter="mosh walter.danilohorta.online"
 alias itmux='tmux -CC new-session -A -s horta-session'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
+alias gch='git checkout'
 alias gp='git push'
+alias gm='git merge'
 alias ll='exa'
 alias e='exit'
 alias t='tmux'
+alias s='ssh'
+alias m='mosh'
+alias vim='nvim'
+alias v='nvim'
+alias update-python-format="pip install python-language-server yapf pyflakes jedi rope mccabe pycodestyle pydocstyle pyls-mypy pyls-isort --upgrade"
 
 function lazygit() {
     git add .

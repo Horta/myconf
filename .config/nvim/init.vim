@@ -44,6 +44,7 @@ map g# <Plug>(incsearch-nohl-g#)
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
+let g:formatter_yapf_style = 'pep8'
 au FileType *.py let b:autoformat_autoindent=0
 au BufWrite *.py,*.vim :Autoformat
 
