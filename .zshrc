@@ -12,7 +12,7 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-export SHELL=zsh
+export SHELL=$(which zsh)
 export EDITOR='vim'
 export HOMEBREW_GITHUB_API_TOKEN=cd468c83cf96297451379164245582567c1a87bd
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=245"
