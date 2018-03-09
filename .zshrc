@@ -45,6 +45,7 @@ alias s='ssh'
 alias m='mosh'
 alias vim='nvim'
 alias v='nvim'
+alias w='ssh walter.danilohorta.online'
 alias update-python-format="pip install python-language-server yapf pyflakes jedi rope mccabe pycodestyle pydocstyle pyls-mypy pyls-isort --upgrade"
 
 function lazygit() {
