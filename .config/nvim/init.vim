@@ -8,7 +8,6 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-eunuch'
 Plug 'dracula/vim'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'fidian/hexmode'
 Plug 'brooth/far.vim'
 Plug 'tpope/vim-surround'

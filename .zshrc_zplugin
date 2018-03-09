@@ -1,4 +1,4 @@
-zplugin load zdharma history-search-multi-word
+zplugin light zdharma/history-search-multi-word
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light subnixr/minimal
 zplugin light horta/transfer
