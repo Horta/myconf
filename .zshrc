@@ -63,3 +63,7 @@ if [[ -f ~/.zshrc_local ]] ; then
 fi
 
 source ~/.zshrc_zplugin
+
+# Disable magic enter from the minimal prompt plugin
+MNML_INFOLN=()
+MNML_MAGICENTER=()
