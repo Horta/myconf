@@ -14,7 +14,7 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 export SHELL=$(which zsh)
 export EDITOR='vim'
-export HOMEBREW_GITHUB_API_TOKEN=cd468c83cf96297451379164245582567c1a87bd
+export HOMEBREW_GITHUB_API_TOKEN=14a8dc53f480d3400e76044bdeb335784d196ec7
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=245"
 export HISTFILE=~/.zhistory
 export SAVEHIST=500000
