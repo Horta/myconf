@@ -67,3 +67,7 @@ source ~/.zshrc_zplugin
 # Disable magic enter from the minimal prompt plugin
 MNML_INFOLN=()
 MNML_MAGICENTER=()
+MNML_USER_CHAR='$'
+MNML_NOMRAL_CHAR='-'
+MNML_INSERT_CHAR='>'
+MNML_PROMPT=(mnml_ssh mnml_status mnml_keymap)
