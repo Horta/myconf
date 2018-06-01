@@ -31,6 +31,7 @@ alias sdist="python setup.py sdist"
 alias walter="ssh walter.danilohorta.online"
 alias itmux='tmux -CC new-session -A -s horta-session'
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+alias gs='git status'
 alias ga='git add'
 alias gaa='git add --all'
 alias gc='git commit'
