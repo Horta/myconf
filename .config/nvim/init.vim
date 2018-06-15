@@ -1,6 +1,5 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'terryma/vim-multiple-cursors'
 Plug 'scrooloose/nerdtree'
 Plug 'haya14busa/incsearch.vim'
 Plug 'bling/vim-airline'
@@ -52,8 +51,6 @@ au BufWrite *.py,*.vim :Autoformat
 filetype plugin on
 
 set timeoutlen=1000 ttimeoutlen=0
-
-let g:deoplete#enable_at_startup = 1
 
 if (empty($TMUX))
     if (has("nvim"))
