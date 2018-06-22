@@ -13,6 +13,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'blueyed/vim-diminactive'
+Plug 'ambv/black'
 
 call plug#end()
 
@@ -42,9 +43,11 @@ map g# <Plug>(incsearch-nohl-g#)
 map <ScrollWheelUp> <C-Y>
 map <ScrollWheelDown> <C-E>
 
-let g:formatter_yapf_style = 'pep8'
+" let g:formatter_yapf_style = 'pep8'
 au FileType *.py let b:autoformat_autoindent=0
-au BufWrite *.py,*.vim :Autoformat
+au FileType *.py let b:black_fast=1
+au BufWrite *.vim :Autoformat
+autocmd BufWritePost *.py silent! execute ':Black'
 
 :command Q bp|bd #
 
