@@ -1,3 +1,9 @@
+.ipynb_checkpoints/
+.pytest_cache/
+
+*.sublime-project
+*.sublime-workspace
+
 .ropeproject/
 .mypy_cache/
 .vscode/

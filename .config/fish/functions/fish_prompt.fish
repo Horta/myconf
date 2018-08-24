@@ -1,0 +1,1 @@
+/Users/horta/.config/fisherman/bobthefish/fish_prompt.fish
