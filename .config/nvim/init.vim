@@ -1,19 +1,19 @@
- call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
- Plug 'scrooloose/nerdtree'
- Plug 'haya14busa/incsearch.vim'
- Plug 'vim-airline/vim-airline'
- Plug 'vim-airline/vim-airline-themes'
- Plug 'mhartington/oceanic-next'
- Plug 'Chiel92/vim-autoformat'
- Plug 'sheerun/vim-polyglot'
- Plug 'tpope/vim-eunuch'
- Plug 'fidian/hexmode'
- Plug 'tpope/vim-commentary'
- Plug 'blueyed/vim-diminactive'
- Plug 'terryma/vim-multiple-cursors'
- Plug 'Xuyuanp/nerdtree-git-plugin'
- Plug 'albfan/nerdtree-git-plugin'
+Plug 'scrooloose/nerdtree'
+Plug 'haya14busa/incsearch.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'mhartington/oceanic-next'
+Plug 'Chiel92/vim-autoformat'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-eunuch'
+Plug 'fidian/hexmode'
+Plug 'tpope/vim-commentary'
+Plug 'blueyed/vim-diminactive'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'albfan/nerdtree-git-plugin'
 
 call plug#end()
 
@@ -65,11 +65,7 @@ map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
 
-" let g:black_fast = 1
-" let g:black_linelength = 88
-" au FileType *.py let b:autoformat_autoindent=1
-" au BufWrite *.vim :Autoformat
-" au BufWrite *.py silent! execute ':Black'
+au BufWrite *.vim :Autoformat
 
 :command Q bp|bd #
 
