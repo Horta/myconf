@@ -4,7 +4,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'haya14busa/incsearch.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'mhartington/oceanic-next'
+" Plug 'mhartington/oceanic-next'
+Plug 'rakr/vim-one'
 Plug 'Chiel92/vim-autoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-eunuch'
@@ -14,6 +15,7 @@ Plug 'blueyed/vim-diminactive'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'albfan/nerdtree-git-plugin'
+Plug 'chrisbra/Colorizer'
 
 call plug#end()
 
@@ -23,10 +25,13 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 let g:airline#extensions#tabline#enabled=1
-let g:airline_theme='oceanicnext'
+" let g:airline_theme='oceanicnext'
 let g:airline_powerline_fonts = 1
 set termguicolors
-colorscheme OceanicNext
+let g:airline_theme='one'
+colorscheme one
+set background=dark
+" colorscheme OceanicNext
 let g:clipboard = {'copy': {'+': 'pbcopy', '*': 'pbcopy'}, 'paste': {'+': 'pbpaste', '*': 'pbpaste'}, 'name': 'pbcopy', 'cache_enabled': 0}
 set clipboard+=unnamedplus
 
@@ -77,6 +82,11 @@ let &colorcolumn=join(range(89,999),",")
 highlight ColorColumn ctermbg=235 guibg=#191919
 highlight NonText ctermbg=235 guibg=#191919
 highlight EndOfBuffer ctermbg=235 guibg=#191919
+
+" let &colorcolumn=join(range(89,999),",")
+" highlight ColorColumn ctermbg=235 guibg=#eeeeee
+" highlight NonText ctermbg=235 guibg=#eeeeee
+" highlight EndOfBuffer ctermbg=235 guibg=#eeeeee
 
 :command NE NERDTree
 silent! nmap <C-p> :NERDTreeToggle<CR>

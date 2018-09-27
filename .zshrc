@@ -71,3 +71,6 @@ MNML_USER_CHAR='$'
 MNML_NOMRAL_CHAR='-'
 MNML_INSERT_CHAR='>'
 MNML_PROMPT=(mnml_ssh mnml_status mnml_keymap)
+
+# added by travis gem
+[ -f /Users/horta/.travis/travis.sh ] && source /Users/horta/.travis/travis.sh
